@@ -1,0 +1,60 @@
+body {
+  height: 1000vh;
+  background-color: plum;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle-btn {
+  color: black;
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width: 992px){
+  .navbar .links{
+    display: none;
+  }
+
+  .navbar .toggle-btn{
+    display: block;
+  }
+}
