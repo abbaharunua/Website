@@ -1,5 +1,15 @@
-body {
-  height: 500vh;
+#homepage-body {
+  height: 470vh;
+  background-color: #131313;
+}
+
+#projects-body {
+  height: 110vh;
+  background-color: #131313;
+}
+
+#contact-body {
+  height: 110vh;
   background-color: #131313;
 }
 
@@ -100,13 +110,13 @@ header {
   }
 }
 
-.initial-section {
+.hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 80vh;
+  height: 100vh;
   background-color: #131313;
   z-index: 1;
   width: 100%;
@@ -115,27 +125,27 @@ header {
   padding-left: 20px;
 }
 
-.initial-section .initial-text {
+.hero-section .hero-text {
   padding: 15px;
 }
 
-.initial-section .initial-text h2 {
+.hero-section .hero-text h2 {
   font-size: 4rem;
   margin-top: 10px;
   color: white;
 }
 
-.initial-section .initial-img {
+.hero-section .hero-img {
   text-align: center;
 }
 
-.initial-section .initial-img img {
+.hero-section .hero-img img {
   height: 80%;
   width: 80%;
 }
 
 @media screen and (max-width: 768px) {
-  .initial-section {
+  .hero-section {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -147,13 +157,11 @@ header {
     margin-bottom: 4rem;
   }
 
-  .initial-section.initial-text h2 {
+  .hero-section.hero-text h2 {
     font-size: 2.2rem;
     margin-top: 2rem;
   }
 }
-
-
 
 @media screen and (max-width: 480px) {
   .main__content h1 {
@@ -182,8 +190,8 @@ header {
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 55vh;
-  background-color: rgb(253, 79, 79);
+  height: 60vh;
+  background-color: #131313;
   z-index: 1;
   width: 100%;
   max-width: 100%;
@@ -200,12 +208,13 @@ header {
 
 .quote-section .quote blockquote {
   font-style: italic;
-  background-color: #f9f9f9;
+  background-color: #131313;
   margin: 10px;
   padding: 20px;
   quotes: "\201C""\201D""\2018""\2019";
   height: auto;
   font-size: 2.5rem;
+  color: white;
 }
 
 .quote-section .quote blockquote:before {
@@ -220,11 +229,13 @@ header {
   text-align: right;
   display: block;
   margin-top: 10px;
+  background-color: #131313;
 }
 
 .quote-section .quote blockquote cite {
   font-style: normal;
   font-weight: bold;
+  background-color:#131313;
 }
 
 @media screen and (max-width: 768px) {
@@ -245,14 +256,216 @@ header {
 
 .main-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 85vh;
+  height: 280vh;
   background-color: rgb(253, 79, 79);
   z-index: 1;
   width: 100%;
   max-width: 100%;
 }
+.main-section h1 {
+  font-size: 5.3rem;
+  margin-bottom: 0%;
+  margin-top: 10%;
+}
 
+.main-section .journey-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+}
+
+.main-section .journey-item img {
+  height: 95%;
+  width: 95%;
+}
+
+.main-section .journey-item .journey-item-text {
+  margin-left: 3rem;
+  margin-bottom: 40%;
+}
+
+.main-section .journey-item .journey-item-text h2 {
+  font-size: 2.8rem;
+}
+
+.main-section .journey-item .journey-item-text p {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1129px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 450vh;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .main-section h1 {
+    font-size: 4.8rem;
+    margin-bottom: 0%;
+  }
+  .main-section .journey-item{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    border-bottom: 7px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+  }
+
+  .main-section .journey-item:last-child {
+    border-bottom: none;
+  }
+
+  .main-section .journey-item .journey-item-text {
+    margin-bottom: 5%;
+  }
+  .main-section .journey-item .journey-item-text p {
+    font-size: 1.8rem;
+  }
+
+}
+/*footer*/
+
+footer {
+  width: 100%;
+  background-color: #131313;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-container p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/*Projects*/
+#projects-header {
+  color: black;
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects {
+  background-color: rgb(253, 79, 79);
+}
+
+.projects .projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .projects-wrapper .projects-img {
+  margin-bottom: 16%;
+}
+
+.projects .projects-wrapper .projects-img img {
+  width: 90%;
+  height: auto;
+}
+
+.projects .projects-wrapper .readme-section .readme h1 {
+  color: #131313;
+  font-size: 3.3rem;
+}
+
+.projects .projects-wrapper .readme-section .readme p {
+  color: #131313;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 980px) {
+  .projects .projects-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projects-header {
+    color: black;
+    font-size: 3.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 7px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/*contact page*/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  padding: 2rem;
+  background-color: inherit;
+  color: white;
+}
+
+.contact-section h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 60%;
+  gap: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-item h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-item p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: rgb(109, 61, 164);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    width: 80%;
+  }
+}
